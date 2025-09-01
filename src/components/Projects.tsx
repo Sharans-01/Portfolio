@@ -30,6 +30,8 @@ const cardVariants = {
   },
 };
 
+
+
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: false,
@@ -47,24 +49,27 @@ githubUrl: 'https://github.com/Sharans-01/Sepsis-Care.git',
 liveUrl: 'https://sepsis-care.onrender.com', 
 
     },
-    {
-      title: 'Used Car Price Prediction',
-      description:
-        'A machine learning project to predict used car prices using Python and Streamlit for the user interface',
-      image: '/projects/p1.png',
-      tags: ['Python', 'Machine Learning', 'Streamlit', 'Data Science'],
-      githubUrl: 'https://github.com/Sharans-01/ML-Project.git',
-      liveUrl: 'https://carvalue.streamlit.app',
-    },
-    {
+
+      {
       title: 'Real-Time Chatting Application',
       description:
         'A MERN stack application for seamless real-time communication with features like user authentication, private and group chats.',
       image: '/projects/p2.png',
       tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Socket.IO'],
       githubUrl: 'https://github.com/Sharans-01/Chat-App.git',
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://chatterhub1.vercel.app',
     },
+ {
+  title: 'CarValue - Car Price Predictor',
+  description:
+    'An AI-powered web app that predicts used car prices with a React frontend and FastAPI backend, providing quick and accurate estimates.',
+  image: '/projects/p01.png',
+  tags: ['React','Vite', 'FastAPI', 'Machine Learning','XGBoost'],
+  githubUrl: 'https://github.com/Sharans-01/Car-Price-predictor.git',
+  liveUrl: 'https://carvalues.netlify.app/',
+},
+
+  
     {
       title: 'Tasty Bytes – Food Recipe App',
       description: 'A responsive food recipe app built with React and Tailwind CSS. This lets users explore a variety of recipes with a clean UI and easy navigation.',
