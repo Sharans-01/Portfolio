@@ -26,3 +26,12 @@ html {
 .animate-blink {
   animation: blink 1s infinite;
 }
+
+.CircularProgressbar-text {
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.CircularProgressbar-trail {
+  stroke: #d6d6d6;
+}

@@ -70,14 +70,14 @@ const About = () => {
     I’m Sharan, a Computer Science Engineering graduate from <strong>Dr. T. Thimmaiah Institute of Technology</strong>, with a CGPA of <strong>8.56</strong>. I am passionate about building innovative, efficient, and scalable software solutions to solve real-world challenges.
   </p>
   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify transition-colors duration-200">
-    My expertise lies in <strong>Full-Stack Development</strong> and <strong>Python Programming</strong>. I have gained practical experience through diverse projects and have earned certifications including <em>Joy of Computing with Python</em> (NPTEL) and a virtual internship in AI & ML supported by AICTE and AWS.
+    My expertise lies in <strong>Python Programming</strong> and <strong>Full-Stack Development</strong>. I have gained practical experience through diverse projects and have earned certifications including <em>Joy of Computing with Python</em> (NPTEL) and a virtual internship in AI & ML supported by AICTE and AWS.
   </p>
   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify transition-colors duration-200">
     I strongly believe in continuous learning, adaptability, and staying updated with modern tools, frameworks, and industry best practices to deliver impactful solutions.
   </p>
 </div>
 
-<div className="space-y-4">
+<div className="space-y-2">
   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify transition-colors duration-200">
     I am committed to professional growth and aspire to contribute meaningfully to the technology industry by leveraging my skills, creativity, and problem-solving mindset.
   </p>
