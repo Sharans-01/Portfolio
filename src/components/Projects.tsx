@@ -55,16 +55,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/Sharans-01/Gemini-Clone.git',
       liveUrl: 'https://mynovabot.netlify.app/',
     },
-    {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather information with interactive maps',
-      image: '/projects/p3.png',
-      tags: ['React', 'Vite', 'OpenWeather API', 'Mapbox'],
-      category: 'Frontend',
-      featured: false,
-      githubUrl: 'https://github.com/Sharans-01/Weather-app.git',
-      liveUrl: 'https://skytrack1.netlify.app/',
-    },
+    
     {
   title: 'Inventory Management System',
   description: 'A full-stack Inventory Management System built using React, Node.js, Express and MySQL . It supports complete CRUD operations, order management with an admin dashboard for analytics.',
@@ -75,6 +66,16 @@ const Projects = () => {
   githubUrl: 'https://github.com/Sharans-01/Inventory-Management-System.git',
   liveUrl: 'https://github.com/Sharans-01/Inventory-Management-System.git',
 },
+{
+      title: 'Weather Dashboard',
+      description: 'Real-time weather information with interactive maps',
+      image: '/projects/p3.png',
+      tags: ['React', 'Vite', 'OpenWeather API', 'Mapbox'],
+      category: 'Frontend',
+      featured: false,
+      githubUrl: 'https://github.com/Sharans-01/Weather-app.git',
+      liveUrl: 'https://skytrack1.netlify.app/',
+    },
 
     {
       title: 'QR Code Generator and Decoder',
