@@ -178,10 +178,10 @@ const Projects = () => {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.parentElement.innerHTML += '<div class="flex items-center justify-center h-full"><Folder class="w-16 h-16 text-purple-300 dark:text-purple-700" /></div>';
-                      }}
+                      // onError={(e) => {
+                      //   e.target.style.display = 'none';
+                      //   e.target.parentElement.innerHTML += '<div class="flex items-center justify-center h-full"><Folder class="w-16 h-16 text-purple-300 dark:text-purple-700" /></div>';
+                      // }}
                     />
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6 gap-4">
@@ -253,10 +253,10 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.parentElement.innerHTML += '<div class="flex items-center justify-center h-full"><Folder class="w-16 h-16 text-gray-300 dark:text-gray-600" /></div>';
-                    }}
+                    // onError={(e) => {
+                    //   e.target.style.display = 'none';
+                    //   e.target.parentElement.innerHTML += '<div class="flex items-center justify-center h-full"><Folder class="w-16 h-16 text-gray-300 dark:text-gray-600" /></div>';
+                    // }}
                   />
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
