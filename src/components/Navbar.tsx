@@ -48,21 +48,22 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
+  <div className="md:hidden">
+    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-end">
+      {navItems.map((item) => (
+        <a
+          key={item}
+          href={`#${item.toLowerCase()}`}
+          className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium text-right"
+          onClick={() => setIsOpen(false)}
+        >
+          {item}
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
     </nav>
   );
 };

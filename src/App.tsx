@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
 
@@ -30,6 +30,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Certifications />
         <Contact />
       </motion.main>
       <footer className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-8 transition-colors duration-200">
