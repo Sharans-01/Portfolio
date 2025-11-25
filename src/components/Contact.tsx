@@ -10,6 +10,7 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -24,20 +25,37 @@ const Contact = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setStatus({ type: "", message: "" });
+  e.preventDefault();
+  setIsSubmitting(true);
+  setStatus({ type: "", message: "" });
 
-    // Mock EmailJS (replace later)
-    setTimeout(() => {
+  emailjs
+    .send(
+      "service_6lauqf4",
+      "template_efpcuok",
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        to_name: "Sharan",
+        message: formData.message,
+      },
+      "cMUfPkaju0H3RVq6d"
+    )
+    .then(() => {
       setStatus({
         type: "success",
         message: "Message sent successfully! I'll get back to you soon.",
       });
       setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+    })
+    .catch(() => {
+      setStatus({
+        type: "error",
+        message: "Something went wrong. Please try again.",
+      });
+    })
+    .finally(() => setIsSubmitting(false));
+};
 
   const contactInfo = [
     {
@@ -57,7 +75,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      value: "Kolar Gold Field, Karnataka, India",
+      value: "Bengaluru, Karnataka, India",
       link: null,
       gradient: "from-purple-500 to-pink-500",
     },

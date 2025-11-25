@@ -29,7 +29,7 @@ const Projects = () => {
       title: 'CarValue - Car Price Predictor',
       description: 'An AI-powered web app that predicts used car prices with a React frontend and FastAPI backend, providing quick and accurate estimates.',
       image: '/projects/p01.png',
-      tags: ['React', 'Vite', 'FastAPI', 'Machine Learning', 'XGBoost'],
+      tags: ['React', 'Vite', 'FastAPI','Python', 'Machine Learning', 'XGBoost'],
       category: 'AI/ML',
       featured: true,
       githubUrl: 'https://github.com/Sharans-01/Car-Price-predictor.git',
@@ -67,16 +67,26 @@ const Projects = () => {
   liveUrl: 'https://github.com/Sharans-01/Inventory-Management-System.git',
 },
 {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather information with interactive maps',
-      image: '/projects/p3.png',
-      tags: ['React', 'Vite', 'OpenWeather API', 'Mapbox'],
-      category: 'Frontend',
-      featured: false,
-      githubUrl: 'https://github.com/Sharans-01/Weather-app.git',
-      liveUrl: 'https://skytrack1.netlify.app/',
-    },
-
+  title: 'EduTrack Portal',
+  description: 'A Django-powered portal for managing students, courses, enrollments, and projects with AJAX-based features and a modern Tailwind UI.',
+  image: '/projects/p12.png',
+  tags: [ 'Python','Django', 'Tailwind', 'AJAX'],
+  category: 'Full-Stack',
+  featured: false,
+  githubUrl: 'https://github.com/Sharans-01/Student-Course-Registration.git',
+  liveUrl: 'https://github.com/Sharans-01/Student-Course-Registration.git',
+},
+{
+  title: 'Weather App',
+  description: 'A simple weather app built with React and Vite, showing real-time weather updates using the OpenWeather API and an interactive Mapbox view.',
+  image: '/projects/p3.png',
+  tags: ['React', 'Vite', 'OpenWeather API', 'Mapbox'],
+  category: 'Frontend',
+  featured: false,
+  githubUrl: 'https://github.com/Sharans-01/Weather-app.git',
+  liveUrl: 'https://skytrack1.netlify.app/',
+},
+    
     {
       title: 'QR Code Generator and Decoder',
       description: 'A Python application for generating and decoding QR codes using OpenCV, designed for easy data encoding and extraction.',
@@ -87,16 +97,16 @@ const Projects = () => {
       githubUrl: 'https://github.com/Sharans-01/QR-Code-Project.git',
       liveUrl: 'https://github.com/Sharans-01/QR-Code-Project.git',
     },
-    {
-      title: 'Basic Calculator',
-      description: 'A simple and responsive calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations with a clean and user-friendly interface.',
-      image: '/projects/p8.png',
-      tags: ['HTML', 'CSS', 'JavaScript', ],
-      category: 'Frontend',
-      featured: false,
-      githubUrl: 'https://github.com/Sharans-01/Basic-Calculator.git',
-      liveUrl: 'https://calcify1.netlify.app/',
-    },
+    // {
+    //   title: 'Basic Calculator',
+    //   description: 'A simple and responsive calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations with a clean and user-friendly interface.',
+    //   image: '/projects/p8.png',
+    //   tags: ['HTML', 'CSS', 'JavaScript', ],
+    //   category: 'Frontend',
+    //   featured: false,
+    //   githubUrl: 'https://github.com/Sharans-01/Basic-Calculator.git',
+    //   liveUrl: 'https://calcify1.netlify.app/',
+    // },
   ];
 
   const categories = ['all', 'AI/ML', 'Full-Stack', 'Frontend', 'Backend'];
@@ -164,7 +174,7 @@ const Projects = () => {
               {featuredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-gray-700"
+                 className="group relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg"
                 >
                   {/* Featured Badge */}
                   <div className="absolute top-4 right-4 z-10 flex items-center gap-1 px-3 py-1 bg-yellow-500 rounded-full shadow-lg">
@@ -173,7 +183,7 @@ const Projects = () => {
                   </div>
 
                   {/* Project Image */}
-                  <div className="relative h-56 overflow-hidden bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30">
+                  <div className="relative h-48 overflow-hidden md:h-52 bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30">
                     <img
                       src={project.image}
                       alt={project.title}

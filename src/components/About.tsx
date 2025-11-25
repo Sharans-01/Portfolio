@@ -112,7 +112,7 @@ const About = () => {
   </p>
   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
   My expertise lies in <span className="font-semibold text-gray-900 dark:text-white">Python programming</span> and{' '}
-  <span className="font-semibold text-gray-900 dark:text-white">web development</span>. I focus on building efficient, scalable, and user-friendly applications, combining clean code practices with modern development tools to deliver impactful digital solutions.
+  <span className="font-semibold text-gray-900 dark:text-white">Web development</span>. I focus on building efficient, scalable, and user-friendly applications, combining clean code practices with modern development tools to deliver impactful digital solutions.
 </p>
 
 </div>
